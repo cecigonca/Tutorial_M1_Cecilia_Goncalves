@@ -1,9 +1,10 @@
 extends Node # instancia a classe Node2D
 
-var status = 1
-var vscore = 0
-var x = 1.5 
-var y = 1.5 
+var status = 1 # jogando
+var vscore = 0 # aumenta o score quando o dragão atravessa entre as colunas
+var x = 2.5 # movimenta o cenário do fundo e as colunas para colisão (aumentado de 1.5 para 2.5) 
+var y = 1.5 # puxa o dragão para baixo, se bater no fundo ou no teto termina o jogo
+
 
 # executa essa função ao carregar o jogo
 func _ready():
