@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://inicial2.png" type="Texture" id=1]
+[ext_resource path="res://telainical.gd" type="Script" id=2]
+[ext_resource path="res://meteoro.png" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( -5, -1 )
+scale = Vector2( 1.08, 1.2 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Button" type="Button" parent="."]
+margin_left = 459.0
+margin_top = 342.0
+margin_right = 573.0
+margin_bottom = 447.0
+
+[node name="meteoro" type="Sprite" parent="Button"]
+position = Vector2( 84, 7 )
+scale = Vector2( 0.630986, 0.614844 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Button"]
+margin_left = -16.0
+margin_top = 20.0
+margin_right = 25.0
+margin_bottom = 34.0
+rect_scale = Vector2( 3.63413, 4.74963 )
+text = "JOGAR"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
