@@ -1,0 +1,80 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://instrucoes2.gd" type="Script" id=1]
+[ext_resource path="res://setapng.png" type="Texture" id=2]
+[ext_resource path="res://inicial2.png" type="Texture" id=3]
+[ext_resource path="res://tecladoseta2.png" type="Texture" id=4]
+[ext_resource path="res://personagem_limpo.png" type="Texture" id=5]
+[ext_resource path="res://balao_de_fala.png.png" type="Texture" id=6]
+[ext_resource path="res://textosetas.png" type="Texture" id=7]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( -5, -1 )
+scale = Vector2( 1.08, 1.2 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="personagem" type="Sprite" parent="."]
+position = Vector2( 140.5, 425 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 5 )
+
+[node name="setasteclado" type="Sprite" parent="."]
+position = Vector2( 783, 191 )
+scale = Vector2( 0.484859, 0.479341 )
+texture = ExtResource( 4 )
+
+[node name="balao" type="Sprite" parent="."]
+position = Vector2( 380, 394 )
+scale = Vector2( 5.71094, 7.07031 )
+texture = ExtResource( 6 )
+
+[node name="texto" type="Sprite" parent="."]
+position = Vector2( 382, 333 )
+scale = Vector2( 0.884518, 0.721177 )
+texture = ExtResource( 7 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 801.0
+margin_top = 467.0
+margin_right = 977.0
+margin_bottom = 522.0
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 925.0
+margin_top = 425.0
+margin_right = 937.0
+margin_bottom = 562.0
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 928.0
+margin_top = 451.0
+margin_right = 962.0
+margin_bottom = 485.0
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 921.0
+margin_top = 515.0
+margin_right = 957.0
+margin_bottom = 548.0
+
+[node name="seta" type="Sprite" parent="."]
+position = Vector2( 903, 496 )
+scale = Vector2( 0.31338, 0.343072 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 846.0
+margin_top = 478.0
+margin_right = 887.0
+margin_bottom = 492.0
+rect_scale = Vector2( 2.81604, 2.93667 )
+text = "JOGAR"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]

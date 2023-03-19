@@ -1,0 +1,301 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://mundofogo2.0.jpeg" type="Texture" id=1]
+[ext_resource path="res://personagem_limpo.png" type="Texture" id=2]
+[ext_resource path="res://personagem.gd" type="Script" id=3]
+[ext_resource path="res://meteoro.gd" type="Script" id=4]
+[ext_resource path="res://meteoro_certo2.png" type="Texture" id=5]
+[ext_resource path="res://meteorO6.gd" type="Script" id=6]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 24.0
+height = 50.0
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 87.0517
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 514, 23.5 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -1 )
+scale = Vector2( 1.88095, 1.77581 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="personagem" type="KinematicBody2D" parent="."]
+position = Vector2( 503, 512 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite2" type="Sprite" parent="personagem"]
+scale = Vector2( 0.394663, 0.464743 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="personagem"]
+shape = SubResource( 1 )
+
+[node name="meteoro" type="Area2D" parent="."]
+position = Vector2( -26, -25 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteoro"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteoro"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteoro2" type="Area2D" parent="."]
+position = Vector2( 449, -240 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteoro2"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteoro2"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteoro3" type="Area2D" parent="."]
+position = Vector2( -252, -365 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteoro3"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteoro3"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteoro4" type="Area2D" parent="."]
+position = Vector2( -403, -652 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteoro4"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteoro4"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteoro5" type="Area2D" parent="."]
+position = Vector2( 220, -440 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteoro5"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteoro5"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteoro6" type="Area2D" parent="."]
+position = Vector2( 97, -775 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteoro6"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteoro6"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteoro7" type="Area2D" parent="."]
+position = Vector2( 520, -985 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteoro7"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteoro7"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteoro8" type="Area2D" parent="."]
+position = Vector2( -298, -1065 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteoro8"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteoro8"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteoro9" type="Area2D" parent="."]
+position = Vector2( 73, -1214 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteoro9"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteoro9"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteorO" type="Area2D" parent="."]
+position = Vector2( 412, -1405 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteorO"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteorO"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteorO2" type="Area2D" parent="."]
+position = Vector2( -118, -1553 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteorO2"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteorO2"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteorO3" type="Area2D" parent="."]
+position = Vector2( -404, -1712 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteorO3"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteorO3"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteorO4" type="Area2D" parent="."]
+position = Vector2( 282, -1772 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteorO4"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteorO4"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteorO5" type="Area2D" parent="."]
+position = Vector2( -174, -2016 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteorO5"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteorO5"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="meteorO6" type="KinematicBody2D" parent="."]
+position = Vector2( 144, -2147 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="meteorO6"]
+position = Vector2( 522, -158 )
+scale = Vector2( 0.613431, 0.650794 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="meteorO6"]
+position = Vector2( 493, -94 )
+shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 512, 672.5 )
+shape = SubResource( 3 )
+
+[connection signal="body_entered" from="meteoro" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteoro2" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteoro3" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteoro4" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteoro5" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteoro6" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteoro7" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteoro8" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteoro9" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteorO" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteorO2" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteorO3" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteorO4" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="meteorO5" to="personagem" method="_on_meteoro_body_entered"]
+[connection signal="body_entered" from="Area2D" to="meteorO6" method="_on_Area2D_body_entered"]
